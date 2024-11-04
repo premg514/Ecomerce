@@ -19,7 +19,7 @@ const cartSlice = createSlice({
             }
 
         },
-        removeUser: (state, action) => {
+         removeUser: (state, action) => {
             const productToBeAdded = action.payload
             const indexx = state.cartItems.findIndex(each => {
                 return each.id == productToBeAdded.id
